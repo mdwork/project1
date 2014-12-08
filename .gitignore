@@ -84,7 +84,7 @@ out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
-mockout/
+mockout/SP_Index_2.psd
 
 # JIRA plugin
 atlassian-ide-plugin.xml
