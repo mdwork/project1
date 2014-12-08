@@ -2,12 +2,13 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px 'Roboto Condensed', sans-serif; background:#fff; color:#000; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
+	line-height: 1.35;
 }
 select, input, textarea        { font-size:12px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
@@ -15,7 +16,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px 'Roboto Condensed', sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -46,17 +47,74 @@ a:hover                        { text-decoration:none; }
 }
 .content {
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
+	width: 960px;
 	margin: 0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*Comfortaa*/
+@font-face {
+	font-family: 'Comfortaa';
+	src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf);
+}
+/*Roboto Condensed*/
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url(../fonts/Roboto/Roboto-Condensed.ttf);
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrapper {
+	min-height: 100%;
+}
+	.wrapper:after {
+		content: '';
+		display: block;
+		height: 270px;
+		width: 100%;
+	}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-header {
+	padding: 40px 0;
+	background: url("../images/header/bg_header.jpg") no-repeat center;
+}
+	.header {
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+	}
+	.main-logo {
+		float: left;
+		margin-top: 20px;
+	}
+		.main-logo a,
+		.main-logo img {
+			display: block;
+			width: 280px;
+			height: 70px;
+		}
+	.contact-box {
+		float: right;
+	}
+		.header .text {
+			display: block;
+			margin-bottom: 8px;
+		}
+		.contact-box .tell {
+			font-size: 24px;
+			color: #ffe373;
+		}
+	.info-box-header {
+		width: 300px;
+		margin: 0 auto;
+	}
+		.header .tell {
+			font-size: 24px;
+		}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -69,3 +127,25 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.footer {
+	margin-top: -270px;
+	padding: 30px 0 25px;
+	color: #294754;
+	font-size: 18px;
+	text-align: center;
+}
+	.logo-footer {
+		display: block;
+		width: 160px;
+		height: 40px;
+		margin: 0 auto 5px;
+	}
+	.footer .action {
+		font: 24px 'Comfortaa';
+	}
+	.contact-data {
+		margin-top: 20px;
+	}
+		.contact-data li {
+			font-family: 'Roboto Condensed', sans-serif;
+		}
