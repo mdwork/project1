@@ -100,9 +100,12 @@ a:hover                        { text-decoration:none; }
 	.contact-box {
 		float: right;
 	}
-		.header .text {
+        .contact-box span,
+        .info-box-header span {
+            margin-bottom: 8px;
+        }
+		.header span {
 			display: block;
-			margin-bottom: 8px;
 		}
 		.contact-box .tell {
 			font-size: 24px;
@@ -115,6 +118,11 @@ a:hover                        { text-decoration:none; }
 		.header .tell {
 			font-size: 24px;
 		}
+        .address-box {}
+            .address-box .text {
+                font-size: 16px;
+                border-bottom: 1px solid dotted;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
