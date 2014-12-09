@@ -607,6 +607,7 @@ a:hover                        { text-decoration:none; }
 	}
 
 .box-action-slider {
+    position: relative;
     overflow: hidden;
     height: 360px;
     margin-top: 40px;
@@ -621,7 +622,8 @@ a:hover                        { text-decoration:none; }
         text-transform: uppercase;
         color: #fff;
     }
-        .action-slider .btn {
+        .action-slider .next2,
+        .action-slider .prev2 {
             position: absolute;
             top: 48%;
             display: block;
@@ -630,11 +632,11 @@ a:hover                        { text-decoration:none; }
             cursor: pointer;
             text-indent: -9999px;
         }
-        .action-slider .btn-prev {
+        .action-slider .prev2 {
             left: 0;
             background: url("../images/content/slider_action/triagle_prev.png") no-repeat;
         }
-        .action-slider .btn-next {
+        .action-slider .next2 {
             right: 0;
             background: url("../images/content/slider_action/triagle_next.png") no-repeat;
 
@@ -676,6 +678,9 @@ a:hover                        { text-decoration:none; }
 	}
     .carousel1 li {
         height: 300px;
+    }
+    .carousel2 li {
+        width: 500px;
     }
 		.carousel li .wrap-foto {
 			display: inline-block;
@@ -963,6 +968,13 @@ a:hover                        { text-decoration:none; }
     margin: 0 auto;
 }
 #jcl-demo1 .carousel1 {
+    /* Needed for rendering without flicker */
+    position: relative;
+    visibility: hidden;
+    left: -5000px;
+    margin: 0 auto;
+}
+#jcl-demo2 .carousel2 {
     /* Needed for rendering without flicker */
     position: relative;
     visibility: hidden;

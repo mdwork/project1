@@ -31,6 +31,16 @@
 
             });
         });
+
+        $(function() {
+            $(".slower .carousel2").jCarouselLite({
+                btnNext: ".slower .next2",
+                btnPrev: ".slower .prev2",
+                speed: 800,
+                visible: 1
+
+            });
+        });
     </script>
 </head>
 
@@ -310,17 +320,36 @@
                 </header>
 
                 <div class="box-action-slider">
-                    <div class="action-slider content">
-                        <ul class="list-action-slider">
-                            <li>
-                                <strong>При заказе от 1000 рублей</strong>
-                                <img class="foto" src="images/content/slider_action/foto1.png" alt="foto">
-                                <strong>напиток в подарок</strong>
-                            </li>
-                        </ul>
 
-                        <span class="btn btn-prev">prev</span>
-                        <span class="btn btn-next">next</span>
+
+                    <div class="action-slider content">
+                        <div id="jcl-demo2">
+                            <div class="custom-container slower">
+                                <a href="#" class="prev2 btn btn-prev"></a>
+                                <div class="carousel2">
+                                    <ul class="list-action-slider">
+                                        <li>
+                                            <strong>При заказе от 1000 рублей</strong>
+                                            <img class="foto" src="images/content/slider_action/foto1.png" alt="foto">
+                                            <strong>напиток в подарок</strong>
+                                        </li>
+
+                                        <li>
+                                            <strong>При заказе от 1000 рублей</strong>
+                                            <img class="foto" src="images/content/slider_action/foto1.png" alt="foto">
+                                            <strong>напиток в подарок</strong>
+                                        </li>
+
+                                        <li>
+                                            <strong>При заказе от 1000 рублей</strong>
+                                            <img class="foto" src="images/content/slider_action/foto1.png" alt="foto">
+                                            <strong>напиток в подарок</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="next2"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section><!--end BOX-ACTION-SLIDER-->
