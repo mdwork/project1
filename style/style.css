@@ -1032,6 +1032,9 @@ a:hover                        { text-decoration:none; }
             .wrap-header-location .address-box .text:before {
                 background-image: url("../images/content/triagle_brown.png");
             }
+        .wrap-header-location .list-city-dw {
+            left: 0;
+        }
 
 .map-wrap {
     position: relative;
