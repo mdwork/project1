@@ -193,6 +193,7 @@ a:hover                        { text-decoration:none; }
 			}
 			.list-city-dw {
 				display: none;
+                opacity: 0;
 				position: absolute;
 				top: 36px;
 				left: 45px;
