@@ -38,13 +38,6 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
-.asda {
-	-webkit-transition: all .2s;
-	-moz-transition: all .2s;
-	-ms-transition: all .2s;
-	-o-transition: all .2s;
-	transition: all .2s;
-}
 .content {
 	box-sizing: border-box;
 	width: 960px;
@@ -153,6 +146,12 @@ a:hover                        { text-decoration:none; }
             -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
             -moz-box-shadow:    0 0 2px 0 rgba(0, 0, 0, 0.15);
             box-shadow:         0 0 2px 0 rgba(0, 0, 0, 0.15);
+
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .25;
+            -o-transition: all .5s;
+            transition: all .5s;
 		}
 		.btn-popup:hover {
 			background: #FAD400
@@ -714,11 +713,37 @@ a:hover                        { text-decoration:none; }
 			left: 0;
 			background: url("../images/content/slider2/prev_hover.png") no-repeat;
 		}
-.box-reviews .wrap-foto {
-    display: inline-block;
-    padding: 5px;
-    background: url("../images/content/slider3/bg_foto_slider.png") no-repeat;
+
+.box-reviews,
+.box-reviews a {
+    color: #6b7b8d;
+    text-decoration: none;
 }
+    .box-reviews a:hover {
+        text-decoration: underline;
+    }
+    .box-reviews .wrap-foto {
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 10px;
+        background: url("../images/content/slider3/bg_foto_slider.png") no-repeat;
+    }
+    .box-reviews .name {
+        margin-bottom: 1px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .box-reviews .site {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .box-reviews p {
+        width: 250px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 14px;
+    }
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
