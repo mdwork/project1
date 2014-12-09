@@ -632,29 +632,12 @@ a:hover                        { text-decoration:none; }
             .action-slider strong {
                 display: block;
             }
-            .action-slider .wrap-foto {
-                display: table;
+            .action-slider .foto {
+                display: block;
                 margin: 17px auto;
-                padding: 4px;
-                box-sizing: border-box;
                 width: 200px;
                 height: 200px;
-                border: 2px dashed #fff;
-
-                -webkit-border-radius: 110px;
-                -moz-border-radius: 110px;
-                border-radius: 110px;
             }
-                .action-slider .wrap-foto span {
-                    display: table-cell;
-                    vertical-align: middle;
-                    border: 2px solid #fff;
-
-                    -webkit-border-radius: 110px;
-                    -moz-border-radius: 110px;
-                    border-radius: 110px;
-                }
-
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
