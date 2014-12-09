@@ -38,7 +38,7 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
-* {
+.asda {
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
 	-ms-transition: all .2s;
@@ -652,6 +652,59 @@ a:hover                        { text-decoration:none; }
                 width: 200px;
                 height: 200px;
             }
+.box-about-us {
+	overflow: hidden;
+}
+	.box-about-us p {
+		font-size: 18px;
+		color: #6b7b8d;
+	}
+	#jcl-demo,
+	#jcl-demo1 {
+		position: relative;
+	}
+	.carousel li,
+	.carousel1 li {
+		width: 290px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+		.carousel li .wrap-foto {
+			display: inline-block;
+			padding: 5px;
+			background: url("../images/content/slider2/wrap_slider.png") no-repeat;
+		}
+			.carousel li .wrap-foto img {
+				display: block;
+			}
+	#jcl-demo .next,
+	#jcl-demo .prev,
+	#jcl-demo1 .next1,
+	#jcl-demo1 .prev1 {
+		position: absolute;
+		top: 65px;
+		width: 18px;
+		height: 32px;
+	}
+	#jcl-demo .next,
+	#jcl-demo1 .next1 {
+		right: 0;
+		background: url("../images/content/slider2/next.png") no-repeat;
+	}
+		#jcl-demo .next:hover,
+        #jcl-demo1 .next1:hover {
+			background-image: url("../images/content/slider2/next_hover.png");
+		}
+	#jcl-demo .prev,
+	#jcl-demo1 .prev1 {
+		left: 0;
+		background: url("../images/content/slider2/prev.png") no-repeat;
+	}
+		#jcl-demo .prev:hover,
+		#jcl-demo1 .prev1:hover {
+			left: 0;
+			background: url("../images/content/slider2/prev_hover.png") no-repeat;
+		}
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

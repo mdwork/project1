@@ -4,7 +4,35 @@
     <meta charset="utf-8" />
     <title>Сицилия - сеть пиццерий</title>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="style/style-demo.css">
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/jquery.mousewheel-3.1.12.js"></script>
+    <script src="js/jquery.jcarousellite.js"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script type="text/javascript">
+        $(function() {
+            $(".slower .carousel").jCarouselLite({
+                btnNext: ".slower .next",
+                btnPrev: ".slower .prev",
+                speed: 800,
+                visible: 3
+
+            });
+        });
+
+        $(function() {
+            $(".slower .carousel1").jCarouselLite({
+                btnNext: ".slower .next1",
+                btnPrev: ".slower .prev1",
+                speed: 800,
+                visible: 3
+
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -343,6 +371,99 @@
                     </div>
                 </div><!--end MAP-->
             </section><!--end BOX-LOCATION-->
+
+            <section class="box-about-us content">
+                <header class="header-section">
+                    <h2>Специальные предложения</h2>
+                </header>
+
+                <p>dsfsdfdsfsdf sdfdsfsdfsd sdfdsfsdfsdfs sdfdsfsdfsd</p>
+                <p>dsfsfdgfd fgdfgdfgdfgdf dfgdfgdfgdfgdfgdfgdf dfgfdgdfgdfgdf</p>
+
+                <div id="jcl-demo">
+                    <div class="custom-container slower">
+                        <a href="#" class="prev"></a>
+                        <div class="carousel">
+                            <ul>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto1.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto2.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto3.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto1.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto2.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto3.png">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="next"></a>
+                    </div>
+                    <span class="line-block line-blue"></span>
+                </div>
+
+                <div id="jcl-demo1">
+                    <div class="custom-container slower">
+                        <a href="#" class="prev1"></a>
+                        <div class="carousel1">
+                            <ul>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto1.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto2.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto3.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto1.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto2.png">
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="wrap-foto">
+                                        <img src="images/content/slider2/foto3.png">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="next1"></a>
+                    </div>
+                    <span class="line-block line-blue"></span>
+                </div>
+            </section>
         </main>
     </div><!--end WRAPPER-->
 
@@ -362,7 +483,6 @@
         </footer>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/mainJs.js"></script>
 </body>
 </html>
