@@ -826,7 +826,7 @@ a:hover                        { text-decoration:none; }
         background-image: url("../images/content/bg_close_hover.png");
     }
     .popup-title {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
         text-transform: uppercase;
         font: 300 18px 'Comfortaa', sans-serif;
         text-align: center;
@@ -1009,3 +1009,44 @@ a:hover                        { text-decoration:none; }
 			.contact-data li {
 				font-family: 'Roboto Condensed', sans-serif;
 			}
+
+/*--------------------------------------OTHER---------------------------------------*/
+.map-wrap {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+}
+    .map {
+        position: absolute;
+        width: 100%;
+        height: 360px;
+    }
+
+    .map-box-callback {
+        float: right;
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+        width: 200px;
+        padding: 24px 20px 12px;
+        margin: 0 auto;
+        background: #36525D;
+        color: #ffffff;
+        text-align: center;
+    }
+        .map-box-callback .popup-title {
+            line-height: 26px;
+        }
+        .map-box-callback .list-form {
+            margin-bottom: 30px;
+        }
+            .map-box-callback .list-form input,
+            .map-box-callback .list-form select {
+                width: 200px;
+                padding: 5px;
+            }
+            .map-box-callback .list-form input {
+                width: 182px;
+                padding: 0 9px;
+            }

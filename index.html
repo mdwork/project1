@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Сицилия - сеть пиццерий</title>
+    <meta name="viewport" content="width=1024, initial-scale=1, user-scalable=yes">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
     <script src="js/jquery-1.11.1.js"></script>
@@ -363,39 +364,48 @@
                     <span class="city">г. Батайск</span>
                 </div>
 
-                <div class="map">
-                    <div class="wrap-form-map">
-                        <span class="text">Заполните форму, что бы мы могли связаться с Вами</span>
-                        <form class="ordering-form form-map" name="ordering">
-                            <ul class="list-ord-form">
-                                <li>
-                                    <input type="text" name="name" value="" placeholder="Ваше имя">
-                                </li>
+                <div class="map-wrap">
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7ybCYAHqzxpDl3nYRPWOcCmHfzJXgeDF"></script>
+                    </div>
 
-                                <li>
-                                    <input type="tel" name="tell" value="" placeholder="Ваш телефон">
-                                </li>
+                    <div class="content">
+                        <section class="map-box-callback">
+                            <header>
+                                <h3 class="popup-title">Заполните форму, что бы мы могли связаться с Вами</h3>
+                            </header>
 
-                                <li>
-                                    <label>
-                                        <select name="locality">
-                                            <option>Ваш город</option>
-                                            <option>г. Ростов-на-Дону</option>
-                                            <option>г. Шахты</option>
-                                            <option>г. Батайск</option>
-                                            <option>г. Тимашевск</option>
-                                            <option>г. Кореновск</option>
-                                            <option>г. Славянск-на-Кубани</option>
-                                            <option>ст. Ленинградская</option>
-                                            <option>ст. Каневская</option>
-                                            <option>г. Кропоткин</option>
-                                        </select>
-                                    </label>
-                                </li>
-                            </ul>
+                            <form class="callback" name="callback">
+                                <ul class="list-form">
+                                    <li>
+                                        <input type="text" name="name" value="" placeholder="Ваше имя">
+                                    </li>
 
-                            <input class="btn-popup btn-white" type="submit" value="Оформить заказ">
-                        </form>
+                                    <li>
+                                        <input type="tel" name="tell" value="" placeholder="Ваш телефон">
+                                    </li>
+
+                                    <li>
+                                        <label>
+                                            <select name="locality">
+                                                <option>Ваш город</option>
+                                                <option>г. Ростов-на-Дону</option>
+                                                <option>г. Шахты</option>
+                                                <option>г. Батайск</option>
+                                                <option>г. Тимашевск</option>
+                                                <option>г. Кореновск</option>
+                                                <option>г. Славянск-на-Кубани</option>
+                                                <option>ст. Ленинградская</option>
+                                                <option>ст. Каневская</option>
+                                                <option>г. Кропоткин</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <input class="btn-popup" type="submit" value="Отправить">
+                            </form>
+                        </section>
                     </div>
                 </div><!--end MAP-->
             </section><!--end BOX-LOCATION-->
