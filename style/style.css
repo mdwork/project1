@@ -728,18 +728,21 @@ a:hover                        { text-decoration:none; }
     .close:hover {
         background-image: url("../images/content/bg_close_hover.png");
     }
-    .ordering header h3 {
+    .popup-title {
         margin-bottom: 16px;
         text-transform: uppercase;
         font: 300 18px 'Comfortaa', sans-serif;
         text-align: center;
     }
-    .ordering .line-block {
+    .ordering .line-block,
+    .box-callback .line-block {
         overflow: hidden;
         margin-bottom: 18px;
     }
         .ordering .line-block:before,
-        .ordering .line-block:after {
+        .ordering .line-block:after,
+        .box-callback .line-block:before,
+        .box-callback .line-block:after {
             width: 70px;
         }
     .ordering p {
