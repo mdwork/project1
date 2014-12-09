@@ -1025,6 +1025,44 @@ a:hover                        { text-decoration:none; }
         height: 360px;
     }
 
+    .map-adds-box {
+        position: absolute;
+        z-index: 1;
+        top: 28px;
+        left: 50%;
+        padding: 5px;
+        margin-left: -86px;
+        background: #fffffe;
+
+        -webkit-box-shadow: 0 0 2px 2px rgba(243, 243, 243, 1);
+        -moz-box-shadow:    0 0 2px 2px rgba(243, 243, 243, 1);
+        box-shadow:         0 0 2px 2px rgba(243, 243, 243, 1);
+
+        -webkit-border-radius: 92px;
+        -moz-border-radius: 92px;
+        border-radius: 92px;
+    }
+        .map-adds {
+            overflow: hidden;
+            height: 128px;
+            width: 128px;
+            padding: 21px;
+            background: url("../images/content/bg_border.png") no-repeat center;
+            background-size: cover;
+            text-align: center;
+
+            -webkit-border-radius: 86px;
+            -moz-border-radius: 86px;
+            border-radius: 86px;
+        }
+            .map-adds img {
+                margin-bottom: 3px;
+            }
+            .map-adds p {
+                font-size: 16px;
+                color: #294754;
+            }
+
     .map-box-callback {
         float: right;
         position: relative;
