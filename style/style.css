@@ -346,7 +346,7 @@ a:hover                        { text-decoration:none; }
 					display: none;
 				}
 .box-menu {
-
+    margin-bottom: 40px;
 }
 	.header-section h2 {
 		padding: 6px 0 18px;
@@ -520,19 +520,32 @@ a:hover                        { text-decoration:none; }
 				}
 			.wrap-list-food {
 				overflow: hidden;
-				float: right;
 				width: 686px;
+                margin-left: 24px;
 			}
 				.list-food {
 					width: 726px;
 				}
 					.list-food li {
+                        position: relative;
 						display: inline-table;
+                        box-sizing: border-box;
 						width: 200px;
+                        min-height: 490px;
 						margin: 0 40px 45px 0;
+                        padding: 15px 15px 15px;
 						text-align: center;
 						color: #10435a;
+                        background: #fff;
+                        border: 1px solid #F1F1F1;
+
+                        -webkit-border-radius:10px;
+                        -moz-border-radius: 10px;
+                        border-radius: 10px;
 					}
+                    .list-food li:hover {
+                        background: #EDF1F1;
+                    }
 						.min-logo {
 							display: block;
 							margin: 0 0 15px 20px;
@@ -556,21 +569,38 @@ a:hover                        { text-decoration:none; }
 							font: 18px 'Comfortaa', sans-serif;
 							border-bottom: 1px solid #10435a;
 						}
-						.list-food .description {
-							display: block;
-							margin-bottom: 35px;
-							padding-bottom: 5px;
-							font-size: 14px;
-							border-bottom: 1px solid #10435a;
-						}
-						.price {
-							display: block;
-							margin-bottom: 15px;
-							font-size: 18px;
-						}
+                        .list-food li .bottom {
+                            position: absolute;
+                            bottom: 35px;
+                        }
+                            .list-food .description {
+                                display: block;
+                                margin-bottom: 104px;
+                                padding-bottom: 5px;
+                                font-size: 14px;
+                                border-bottom: 1px solid #10435a;
+                            }
+                            .price {
+                                display: block;
+                                margin-bottom: 15px;
+                                font-size: 18px;
+                            }
 	.box-menu .line-block {
 		margin-top: 20px;
 	}
+
+.box-action-slider {
+    height: 360px;
+    margin-top: 40px;
+    background: url("../images/content/bg_slider_action.jpg") no-repeat center;
+    background-size: 100%;
+}
+    .action-slider {
+        text-align: center;
+        font: 30px  'Comfortaa';
+        text-transform: uppercase;
+        color: #fff;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
