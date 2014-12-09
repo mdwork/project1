@@ -364,48 +364,127 @@ a:hover                        { text-decoration:none; }
 			left: 0;
 			box-sizing: border-box;
 			width: 230px;
-			padding: 20px 15px;
+			padding: 20px 0;
 			background: #FBC633;
+            color: #7d3a1d;
 
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			border-radius: 10px;
 		}
-			.scroll-menu header {
-				text-align: center;
-			}
-				.scroll-menu .logo-section-menu {
-					width: 80px;
-					height: 80px;
-					margin-bottom: 5px;
-				}
-				.scroll-menu h2 {
-					padding-bottom: 10px;
-					color: #7d3a1d;
-					font: 18px 'Comfortaa', sans-serif;
-					border-bottom: 1px solid #7d3a1d;
-				}
-				.block-menu {
-
-				}
-					.block-menu li {
-						cursor: pointer;
-					}
-					.block-menu li:hover {
-						background: #FCD770;
-                        -webkit-transition: all .2s;
-                        -moz-transition: all .2s;
-                        -ms-transition: all .2s;
-                        -o-transition: all .2s;
-                        transition: all .2s;
-					}
-						.block-menu li a {
-							text-decoration: none;
-							color: #7d3a1d;
-							font-size: 14px;
-						}
-
-
+            .scroll-menu section {
+                padding: 0 15px;
+            }
+            .scroll-menu .top {
+                padding-bottom: 14px;
+                margin-bottom: 14px;
+                background: url("../images/content/separator.png") repeat-x bottom;
+            }
+                .scroll-menu header {
+                    text-align: center;
+                }
+                    .scroll-menu .logo-section-menu {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 5px;
+                    }
+                    .scroll-menu h2 {
+                        padding-bottom: 10px;
+                        color: #7d3a1d;
+                        font: 18px 'Comfortaa', sans-serif;
+                        border-bottom: 1px solid #7d3a1d;
+                        text-transform: uppercase;
+                    }
+                    .block-menu {
+                        margin-top: 9px;
+                    }
+                        .block-menu li {
+                            margin-bottom: 5px;
+                            background: url("../images/content/icon_menu_romb.png") no-repeat 10px 8px;
+                        }
+                        .block-menu li:hover {
+                            background-color: #FCD770;
+                            -webkit-transition: all .2s;
+                            -moz-transition: all .2s;
+                            -ms-transition: all .2s;
+                            -o-transition: all .2s;
+                            transition: all .2s;
+                        }
+                            .block-menu li a {
+                                display: block;
+                                padding: 3px 0 2px 25px;
+                                text-decoration: none;
+                                color: #7d3a1d;
+                                font: 14px  'Roboto';
+                                text-transform: uppercase;
+                            }
+                    .header-basket,
+                    .list-food-basket,
+                    .list-food-basket li {
+                        overflow: hidden;
+                        font-size: 14px;
+                    }
+                    .header-basket {
+                        margin-top: 8px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #7d3a1d;
+                    }
+                    .list-food-basket {
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid #7d3a1d;
+                    }
+                    .list-food-basket li {
+                        padding: 8px 0 5px;
+                        border-top: 1px dashed #7d3a1d;
+                    }
+                    .list-food-basket li:first-child {
+                        border: none;
+                    }
+                        .name-column,
+                        .name-food {
+                            float: left;
+                        }
+                        .amount-column,
+                        .number {
+                            float: right;
+                        }
+                        .name-food,
+                        .number {
+                            position: relative;
+                            margin-bottom: 3px;
+                        }
+                            .number:after {
+                                content: '';
+                                display: inline-block;
+                                position: relative;
+                                top: 1px;
+                                width: 13px;
+                                height: 13px;
+                                margin-left: 5px;
+                                background: url("../images/content/delete.png") top no-repeat;
+                                cursor: pointer;
+                            }
+                            .number:hover:after {
+                                background-position: bottom;
+                            }
+                    .wrap-sum {
+                        display: block;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                        .wrap-sum .sum {
+                            color: #ce071d;
+                        }
+                        .btn-white {
+                            width: 100%;
+                            background: #fff;
+                            color: #7D3A1D;
+                        }
+                        .btn-white:hover {
+                            color: #fff;
+                            background: #7D3A1D;
+                        }
 		.box-list-food {
 			float: right;
 			width: 710px;
