@@ -654,14 +654,20 @@ a:hover                        { text-decoration:none; }
             }
 .box-about-us {
 	overflow: hidden;
+    margin-bottom: 40px;
 }
+    .box-about-us .header-section {
+        margin-bottom: 35px;
+    }
 	.box-about-us p {
 		font-size: 18px;
 		color: #6b7b8d;
+        line-height: 1.45;
 	}
 	#jcl-demo,
 	#jcl-demo1 {
 		position: relative;
+        margin: 35px 0;
 	}
 	.carousel li,
 	.carousel1 li {
@@ -708,6 +714,11 @@ a:hover                        { text-decoration:none; }
 			left: 0;
 			background: url("../images/content/slider2/prev_hover.png") no-repeat;
 		}
+.box-reviews .wrap-foto {
+    display: inline-block;
+    padding: 5px;
+    background: url("../images/content/slider3/bg_foto_slider.png") no-repeat;
+}
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
