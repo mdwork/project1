@@ -1012,6 +1012,23 @@ a:hover                        { text-decoration:none; }
 			}
 
 /*--------------------------------------OTHER---------------------------------------*/
+.wrap-header-location {
+    padding: 24px 0 21px;
+    background: #FBC633;
+    text-align: center;
+    color: #7d3a1d;
+}
+    .header-location h2 {
+        font: 31px "Comfortaa", sans-serif;
+    }
+        .wrap-header-location .address-box .text {
+            color: #7d3a1d;
+            border-color: #7d3a1d;
+        }
+            .wrap-header-location .address-box .text:before {
+                background-image: url("../images/content/triagle_brown.png");
+            }
+
 .map-wrap {
     position: relative;
     overflow: hidden;
