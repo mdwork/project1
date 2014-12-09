@@ -10,12 +10,18 @@ $(function() {
 
     $(document).scroll(function(){
         var menuWrap = $('.wrap-menu-js'),
+            menuWrapHeight = menuWrap.height(),
             menu = $('.wrap-menu-js .scroll-menu'),
+            menuHeight = menu.height(),
             posMenu = menuWrap.offset().top,
             curPosDocument = $(document).scrollTop();
 
-        if(curPosDocument > posMenu) {
-            menu.css('top', curPosDocument - posMenu)
+        if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu - $(window).height()) {
+            menu.css('top', curPosDocument - posMenu);
+            console.log('111')
+        }
+        else if(curPosDocument > menuWrapHeight + posMenu - $(window).height()) {
+            menu.css('top', menuWrapHeight + posMenu - menuHeight - $(window).height() - 35);
         }
     });
 
