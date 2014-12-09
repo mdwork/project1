@@ -19,26 +19,31 @@
         <p>Подробности по заказу<br>
             можно уточнить по телефону</p>
 
-        <table>
-            <tr>
-                <th>Название</th>
-                <th>Количество</th>
-            </tr>
-            <tr>
-                <td>Пицца «Сицилия»</td>
-                <td>1 <span class="del"></span></td>
-            </tr>
-            <tr>
-                <td>Салат с индейкой</td>
-                <td>2 <span class="del"></span></td>
-            </tr>
-            <tr>
-                <td>+ Соус «Барбекю»</td>
-                <td>2 <span class="del"></span></td>
-            </tr>
-        </table>
+        <div class="header-basket">
+            <span class="name-column">Название</span>
+            <span class="amount-column">Количество</span>
+        </div>
 
-        <p class="total">Итого: <span>1 050</span> руб</p>
+        <ul class="list-food-basket">
+            <li class="border">
+                <span class="name-food">Пицца «Сицилия»</span>
+                <span class="number">1</span>
+            </li>
+
+            <li>
+                <div class="overflow">
+                    <span class="name-food">Салат с индейкой</span>
+                    <span class="number">2</span>
+                </div>
+
+                <div class="overflow">
+                    <span class="name-food">+ Соус «Барбекю»</span>
+                    <span class="number">2</span>
+                </div>
+            </li>
+        </ul>
+
+        <span class="wrap-sum">Итого: <span class="sum">1 050</span> руб.</span>
 
         <p>Пожалуйста, введите информацию для связи с Вами</p>
 
