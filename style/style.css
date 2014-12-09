@@ -1021,6 +1021,10 @@ a:hover                        { text-decoration:none; }
     .header-location h2 {
         font: 31px "Comfortaa", sans-serif;
     }
+    .wrap-header-location .address-box {
+        width: 216px;
+        margin: 0 auto;
+    }
         .wrap-header-location .address-box .text {
             color: #7d3a1d;
             border-color: #7d3a1d;

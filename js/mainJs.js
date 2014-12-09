@@ -7,4 +7,16 @@ $(function() {
             address.animate({'opacity':'0'}, 200);
         })
     });
+
+    $(document).scroll(function(){
+        var menuWrap = $('.wrap-menu-js'),
+            menu = $('.wrap-menu-js .scroll-menu'),
+            posMenu = menuWrap.offset().top,
+            curPosDocument = $(document).scrollTop();
+
+        if(curPosDocument > posMenu) {
+            menu.css('top', curPosDocument - posMenu)
+        }
+    });
+
 });
