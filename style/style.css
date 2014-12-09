@@ -764,12 +764,15 @@ a:hover                        { text-decoration:none; }
     .ordering-form {
         margin-bottom: 17px;
     }
-        .list-ord-form li {
+        .list-ord-form li,
+        .list-form li {
             margin-bottom: 20px;
             text-align: center;
         }
             .list-ord-form input,
-            .list-ord-form select {
+            .list-ord-form select,
+            .list-form input,
+            .list-form select {
                 width: 200px;
                 height: 32px;
                 padding-left: 6px;
@@ -781,7 +784,8 @@ a:hover                        { text-decoration:none; }
                 -moz-border-radius: 2px;
                 border-radius: 2px;
             }
-            .list-ord-form input {
+            .list-ord-form input,
+            .list-form input {
                 width: 178px;
                 padding: 0 11px;
             }
@@ -805,6 +809,56 @@ a:hover                        { text-decoration:none; }
             height: 44px;
         }
 
+.box-callback {
+    overflow: hidden;
+    position: relative;
+    width: 220px;
+    padding: 26px 20px 0;
+    margin: 0 auto;
+    background: #477D93;
+    color: #ffffff;
+    text-align: center;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+    .box-callback .close {
+        background-image: url("../images/content/callback_close.png");
+    }
+    .box-callback .close:hover {
+        background-image: url("../images/content/callback_close_hover.png");
+    }
+    .box-callback p {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .callback {
+        margin-bottom: 19px;
+    }
+        .list-form {
+            margin-bottom: 10px;
+        }
+            .list-form input,
+            .list-form select {
+                color: #10435a;
+            }
+                .list-form input::-webkit-input-placeholder {
+                    color: #10435a;
+                }
+                .list-form input::-moz-placeholder {
+                    color: #10435a;
+                }
+                .list-form input:-moz-placeholder {
+                    color: #10435a;
+                }
+                .list-form input:-ms-input-placeholder {
+                    color: #10435a;
+                }
+        .callback .btn-popup {
+            width: 160px;
+            height: 44px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
