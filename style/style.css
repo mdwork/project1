@@ -600,17 +600,23 @@ a:hover                        { text-decoration:none; }
 	}
 
 .box-action-slider {
+    overflow: hidden;
     height: 360px;
     margin-top: 40px;
     background: url("../images/content/bg_slider_action.jpg") no-repeat center;
     background-size: 100%;
 }
     .action-slider {
+        position: relative;
+        margin: 23px auto 15px;
         text-align: center;
         font: 30px  'Comfortaa';
         text-transform: uppercase;
         color: #fff;
     }
+        .action-slider strong {
+            display: block;
+        }
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
