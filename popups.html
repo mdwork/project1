@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Попапы</title>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+    <section class="ordering">
+        <span class="close"></span>
+
+        <header>
+            <h3>Оформление заказа</h3>
+        </header>
+
+        <span class="line-block line-brown"></span>
+
+        <p>Подробности по заказу<br>
+            можно уточнить по телефону</p>
+
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Количество</th>
+            </tr>
+            <tr>
+                <td>Пицца «Сицилия»</td>
+                <td>1 <span class="del"></span></td>
+            </tr>
+            <tr>
+                <td>Салат с индейкой</td>
+                <td>2 <span class="del"></span></td>
+            </tr>
+            <tr>
+                <td>+ Соус «Барбекю»</td>
+                <td>2 <span class="del"></span></td>
+            </tr>
+        </table>
+
+        <p class="total">Итого: <span>1 050</span> руб</p>
+
+        <p>Пожалуйста, введите информацию для связи с Вами</p>
+
+        <form class="ordering-form" name="ordering">
+            <ul class="list-ord-form">
+                <li>
+                    <input type="text" name="name" value="" placeholder="Ваше имя">
+                </li>
+
+                <li>
+                    <input type="tel" name="tell" value="" placeholder="Ваш телефон">
+                </li>
+
+                <li>
+                    <label>
+                        <select name="locality">
+                            <option>Ваш город</option>
+                            <option>г. Ростов-на-Дону</option>
+                            <option>г. Шахты</option>
+                            <option>г. Батайск</option>
+                            <option>г. Тимашевск</option>
+                            <option>г. Кореновск</option>
+                            <option>г. Славянск-на-Кубани</option>
+                            <option>ст. Ленинградская</option>
+                            <option>ст. Каневская</option>
+                            <option>г. Кропоткин</option>
+                        </select>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="text" name="adds" value="" placeholder="Адрес доставки">
+                </li>
+
+                <li>
+                    <label>
+                        <select name="cutlery-number">
+                            <option>Количество приборов</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+
+            <input class="btn-popup btn-white" type="submit" value="Оформить заказ">
+        </form>
+
+        <p class="third-person">Ваши данные не будут переданы<br>
+            третьим лицам</p>
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/mainJs.js"></script>
+</body>
+</html>
