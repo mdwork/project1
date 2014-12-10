@@ -58,7 +58,7 @@
                 <div class="contact-box">
                     <span class="text">Позвонить в пиццерию</span>
                     <span class="tell">8 (928) 111-03-23</span>
-                    <button class="btn-popup">Заказать звонок</button>
+                    <button class="btn-popup btn-callback-js">Заказать звонок</button>
                 </div><!--end CONTACT-BOX-->
 
                 <div class="info-box-header">
@@ -173,7 +173,7 @@
                             </ul>
 
                             <span class="wrap-sum">Итого: <span class="sum">1 050</span> руб.</span>
-                            <button class="btn-popup btn-white">Оформить заказ</button>
+                            <button class="btn-popup btn-white btn-order-js">Оформить заказ</button>
                         </section>
                     </div>
 
@@ -550,6 +550,152 @@
                 <li>Юридический адрес: г. Ростов-на-Дону, пл. Круглая 9</li>
             </ul>
         </footer>
+    </div>
+
+    <!--POPUP-->
+    <div id="bg-popup">
+        <div class="overview"></div>
+        <div id="box-popup">
+            <section class="box-callback">
+                <span class="close icon-close_js"></span>
+
+                <header>
+                    <h3 class="popup-title">Закажите обратный звонок</h3>
+                </header>
+
+                <span class="line-block line-white"></span>
+
+                <p>Пожалуйста, введите информацию для связи с Вами</p>
+
+                <form class="callback" name="callback">
+                    <ul class="list-form">
+                        <li>
+                            <input type="text" name="name" value="" placeholder="Ваше имя">
+                        </li>
+
+                        <li>
+                            <input type="tel" name="tell" value="" placeholder="Ваш телефон">
+                        </li>
+
+                        <li>
+                            <label>
+                                <select name="locality">
+                                    <option>Ваш город</option>
+                                    <option>г. Ростов-на-Дону</option>
+                                    <option>г. Шахты</option>
+                                    <option>г. Батайск</option>
+                                    <option>г. Тимашевск</option>
+                                    <option>г. Кореновск</option>
+                                    <option>г. Славянск-на-Кубани</option>
+                                    <option>ст. Ленинградская</option>
+                                    <option>ст. Каневская</option>
+                                    <option>г. Кропоткин</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <input class="btn-popup" type="submit" value="Отправить">
+                </form>
+
+                <p class="third-person">Ваши данные не будут переданы<br>
+                    третьим лицам</p>
+            </section>
+
+            <!--2 form-->
+            <section class="ordering">
+                <span class="close icon-close_js"></span>
+
+                <header>
+                    <h3 class="popup-title">Оформление заказа</h3>
+                </header>
+
+                <span class="line-block line-brown"></span>
+
+                <p>Подробности по заказу<br>
+                    можно уточнить по телефону</p>
+
+                <div class="header-basket">
+                    <span class="name-column">Название</span>
+                    <span class="amount-column">Количество</span>
+                </div>
+
+                <ul class="list-food-basket">
+                    <li class="border">
+                        <span class="name-food">Пицца «Сицилия»</span>
+                        <span class="number">1</span>
+                    </li>
+
+                    <li>
+                        <div class="overflow">
+                            <span class="name-food">Салат с индейкой</span>
+                            <span class="number">2</span>
+                        </div>
+
+                        <div class="overflow">
+                            <span class="name-food">+ Соус «Барбекю»</span>
+                            <span class="number">2</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="wrap-sum">Итого: <span class="sum">1 050</span> руб.</span>
+
+                <p>Пожалуйста, введите информацию для связи с Вами</p>
+
+                <form class="ordering-form" name="ordering">
+                    <ul class="list-ord-form">
+                        <li>
+                            <input type="text" name="name" value="" placeholder="Ваше имя">
+                        </li>
+
+                        <li>
+                            <input type="tel" name="tell" value="" placeholder="Ваш телефон">
+                        </li>
+
+                        <li>
+                            <label>
+                                <select name="locality">
+                                    <option>Ваш город</option>
+                                    <option>г. Ростов-на-Дону</option>
+                                    <option>г. Шахты</option>
+                                    <option>г. Батайск</option>
+                                    <option>г. Тимашевск</option>
+                                    <option>г. Кореновск</option>
+                                    <option>г. Славянск-на-Кубани</option>
+                                    <option>ст. Ленинградская</option>
+                                    <option>ст. Каневская</option>
+                                    <option>г. Кропоткин</option>
+                                </select>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="text" name="adds" value="" placeholder="Адрес доставки">
+                        </li>
+
+                        <li>
+                            <label>
+                                <select name="cutlery-number">
+                                    <option>Количество приборов</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6+</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <input class="btn-popup btn-white" type="submit" value="Оформить заказ">
+                </form>
+
+                <p class="third-person">Ваши данные не будут переданы<br>
+                    третьим лицам</p>
+            </section>
+        </div>
     </div>
 
     <script src="js/mainJs.js"></script>

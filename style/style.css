@@ -801,6 +801,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------POPUPS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .ordering {
+    display: none;
     overflow: hidden;
     position: relative;
     width: 220px;
@@ -911,6 +912,7 @@ a:hover                        { text-decoration:none; }
         }
 
 .box-callback {
+    display: none;
     overflow: hidden;
     position: relative;
     width: 220px;
@@ -1114,3 +1116,27 @@ a:hover                        { text-decoration:none; }
                 width: 182px;
                 padding: 0 9px;
             }
+/*popup*/
+#bg-popup {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#box-popup {
+    opacity: 0;
+}
+#bg-popup .overview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.show_js {
+    display: block !important;
+}
