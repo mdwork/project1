@@ -84,5 +84,9 @@ $(function() {
     var callFormOrder = $('.btn-order-js'),
         formOrder = $('.ordering');
     popupWindow(callFormOrder, formOrder);
+
+    var callFormOrder = $('.btn-addit-js'),
+        formAdditional = $('.additional-offers');
+    popupWindow(callFormOrder, formAdditional);
     /*end*/
 });
