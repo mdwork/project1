@@ -255,6 +255,9 @@ a:hover                        { text-decoration:none; }
 	.line-blue {
 		background-image: url("../images/content/icon_header_blue.png");
 	}
+    .line-dark-blue {
+        background-image: url("../images/content/icon_header_dark_blue.png");
+    }
     .line-white {
         background-image: url("../images/content/icon_header_white.png");
     }
@@ -281,6 +284,10 @@ a:hover                        { text-decoration:none; }
 		.line-blue:after {
 			background: #477D93;
 		}
+        .line-dark-blue:before,
+        .line-dark-blue:after {
+            background: #10435A;
+        }
         .line-brown:before,
         .line-brown:after {
             background: #7D3A1D;
@@ -802,6 +809,10 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------POPUPS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.popups {
+    background: #352C28;
+}
+
 .ordering {
     display: none;
     overflow: hidden;
@@ -964,6 +975,63 @@ a:hover                        { text-decoration:none; }
             width: 160px;
             height: 44px;
         }
+
+.additional-offers {
+    overflow: hidden;
+    position: relative;
+    width: 710px;
+    padding: 26px 30px 30px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    text-align: center;
+    color: #10435a;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+    .additional-offers .close {
+        background-image: url("../images/content/popup_close.png");
+    }
+    .additional-offers .close:hover {
+        background-image: url("../images/content/popup_close_hover.png");
+    }
+    .additional-offers .popup-title {
+        font-weight: 700;
+    }
+    .additional-offers .line-block {
+        margin-bottom: 20px;
+    }
+        .additional-offers .line-block:before,
+        .additional-offers .line-block:after {
+            width: 315px;
+        }
+    .list-add-offers {
+        overflow: hidden;
+        padding: 3px 0;
+    }
+        .list-add-offers li {
+            float: left;
+            width: 198px;
+            padding: 30px 15px 20px;
+            margin: 0 0 10px 10px;
+            background: #FFFFFF;
+
+            -webkit-box-shadow: 0 0 2px 1px rgba(238, 238, 238, 1);
+            -moz-box-shadow:    0 0 2px 1px rgba(238, 238, 238, 1);
+            box-shadow:         0 0 2px 1px rgba(238, 238, 238, 1);
+
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+        .list-add-offers li:nth-child(3n+1) {
+            margin-left: 3px;
+        }
+        .list-add-offers li:nth-child(3n) {
+            clear: both;
+        }
+
 /*slider*/
 #jcl-demo .carousel {
     /* Needed for rendering without flicker */
