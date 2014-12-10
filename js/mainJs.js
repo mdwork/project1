@@ -86,4 +86,6 @@ $(function() {
         formOrder = $('.ordering');
     popupWindow(callFormOrder, formOrder);
     /*end*/
+
+    $('.list-food li:nth-child(3n)').css('margin-right','0');
 });

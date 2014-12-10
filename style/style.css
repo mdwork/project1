@@ -556,8 +556,7 @@ a:hover                        { text-decoration:none; }
 					.list-food li {
                         position: relative;
 						display: inline-table;
-                        box-sizing: border-box;
-						width: 200px;
+						width: 165px;
                         min-height: 490px;
 						margin: 0 40px 45px 0;
                         padding: 15px 15px 15px;
@@ -677,8 +676,11 @@ a:hover                        { text-decoration:none; }
 		box-sizing: border-box;
 		text-align: center;
 	}
+    .carousel li {
+        min-height: 170px;
+    }
     .carousel1 li {
-        height: 300px;
+        min-height: 300px;
     }
     .carousel2 li {
         width: 500px;
