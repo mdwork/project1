@@ -1012,10 +1012,10 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 7px;
     }
         .list-add-offers li {
-            float: left;
-            width: 198px;
+            display: inline-table;
+            width: 199px;
             padding: 30px 15px 10px;
-            margin: 0 0 10px 10px;
+            margin: 0 0 10px 7px;
             background: #FFFFFF;
             cursor: pointer;
 
@@ -1038,7 +1038,7 @@ a:hover                        { text-decoration:none; }
                 display: block;
                 height: 160px;
                 width: 160px;
-                margin: 0 auto;
+                margin: 0 auto 10px;
                 line-height: 156px;
                 background: url("../images/content/bg_border.png") no-repeat center;
                 background-size: cover;
@@ -1065,8 +1065,8 @@ a:hover                        { text-decoration:none; }
                     }
             .list-add-offers h3 {
                 margin-bottom: 14px;
+                padding-bottom: 11px;
                 font: 18px "Comfortaa", sans-serif;
-                line-height: 44px;
                 border-bottom: 1px solid #6B7B8D;
             }
     .total-price {
