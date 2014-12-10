@@ -16,8 +16,7 @@ $(function() {
             menu = $('.wrap-menu-js .scroll-menu'), ////фиксированное меню
             menuHeight = menu.height(), //высота фиксированного меню
             posMenu = menuWrap.offset().top, //позиция блока враппера в документе
-            curPosDocument = $(document).scrollTop(),//текущая позиция экрана
-            heightWindow = window.innerHeight;
+            curPosDocument = $(document).scrollTop(); //текущая позиция экрана
 
         if(curPosDocument < posMenu + 40) {
             menu.css({'top': 40 + 'px', 'bottom':'auto'});
@@ -36,6 +35,25 @@ $(function() {
     /*selected source*/
     $('.list-add-offers li').on('click', function(){
         $(this).toggleClass('select');
+    });
+
+    //fix placeholder for IE7 and IE8
+    $(function () {
+        if (!$.support.placeholder) {
+            $("[placeholder]").focus(function () {
+                if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
+            }).blur(function () {
+                if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
+            }).blur();
+
+            $("[placeholder]").parents("form").submit(function () {
+                $(this).find('[placeholder]').each(function() {
+                    if ($(this).val() == $(this).attr("placeholder")) {
+                        $(this).val("");
+                    }
+                });
+            });
+        }
     });
 
     /*popup function*/

@@ -322,7 +322,7 @@ a:hover                        { text-decoration:none; }
 	.big-header h2 {
 		margin-bottom: 30px;
 		color: #c61617;
-		font: 600 46px 'Comfortaa', sans-serif;
+		font: 600 44px 'Comfortaa', sans-serif;
 		text-align: center;
 		letter-spacing: 1px;
 	}
@@ -769,6 +769,83 @@ a:hover                        { text-decoration:none; }
         text-align: left;
         font-size: 14px;
     }
+.box-callback-control {
+	padding: 35px 0 40px;
+	background: rgb(213,44,63);
+	background: rgba(213,44,63, 0.9);
+}
+	.box-callback-control h2 {
+		margin-bottom: 15px;
+		text-align: center;
+		color: #fff;
+		font: 30px 'Comfortaa';
+	}
+	.wrap-form-control {
+		overflow: hidden;
+		width: 640px;
+		margin: 0 auto;
+	}
+		.wrap-form-control header {
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 26px;
+			color: #fff;
+			background: url("../images/content/bg_header_control.png") no-repeat center;
+		}
+		.wrap-form-control form {
+			margin-top: 30px;
+		}
+			.wrap-form-control li {
+				float: left;
+				margin-left: 20px;
+			}
+			.wrap-form-control li:first-child {
+				margin-left: 0;
+			}
+			.wrap-form-control li.textarea {
+				width: 100%;
+				margin-left: 0;
+			}
+				.wrap-form-control li.textarea textarea {
+					width: 618px;
+					height: 60px;
+					padding: 5px 11px;
+					border: none;
+					resize: none;
+					color: #10435a;
+					font: 16px 'Roboto Condensed', sans-serif;
+
+					-webkit-border-radius: 2px;
+					-moz-border-radius: 2px;
+					border-radius: 2px;
+				}
+					.wrap-form-control textarea::-webkit-input-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control textarea::-moz-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control textarea:-moz-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control textarea:-ms-input-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control li input::-webkit-input-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control li input::-moz-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control li input:-moz-placeholder {
+						color: #6b7b8d;
+					}
+					.wrap-form-control li input:-ms-input-placeholder {
+						color: #6b7b8d;
+					}
+				.wrap-form-control li select {
+					color: #6b7b8d;
+				}
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------INNER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -895,6 +972,29 @@ a:hover                        { text-decoration:none; }
             margin-bottom: 20px;
             text-align: center;
         }
+			.list-form .wrap-select,
+			.list-ord-form .wrap-select {
+				display: inline-block;
+				position: relative;
+			}
+				.list-form .wrap-select:after,
+				.list-ord-form .wrap-select:after {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 24px;
+					height: 32px;
+					pointer-events: none;
+					background: #fff url("../images/content/triagle_select.png") 0 14px no-repeat;
+
+					-webkit-border-top-right-radius: 2px;
+					-webkit-border-bottom-right-radius: 2px;
+					-moz-border-radius-topright: 2px;
+					-moz-border-radius-bottomright: 2px;
+					border-top-right-radius: 2px;
+					border-bottom-right-radius: 2px;
+				}
             .list-ord-form input,
             .list-ord-form select,
             .list-form input,
@@ -964,6 +1064,7 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 19px;
     }
         .list-form {
+			overflow: hidden;
             margin-bottom: 10px;
         }
             .list-form input,
@@ -1243,6 +1344,9 @@ a:hover                        { text-decoration:none; }
                 width: 182px;
                 padding: 0 9px;
             }
+			.list-form select {
+				line-height: 28px;
+			}
 /*popup*/
 #bg-popup {
     display: none;
