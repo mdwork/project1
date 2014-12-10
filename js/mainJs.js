@@ -14,16 +14,20 @@ $(function() {
             menu = $('.wrap-menu-js .scroll-menu'), ////фиксированное меню
             menuHeight = menu.height(), //высота фиксированного меню
             posMenu = menuWrap.offset().top, //позиция блока враппера в документе
-            curPosDocument = $(document).scrollTop(); //текущая позиция экрана
+            curPosDocument = $(document).scrollTop(),//текущая позиция экрана
+            heightWindow = window.innerHeight;
 
         if(curPosDocument < posMenu + 40) {
             menu.css({'top': 40 + 'px', 'bottom':'auto'});
         }
-        else if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu + 35 - $(window).height()) {
-            menu.css({'top': curPosDocument - posMenu, 'bottom':'auto'});
-        }
-        else {
-            menu.css({'top':'auto', 'bottom': 45 + 'px'});
+        else if(curPosDocument > posMenu) {
+            if (curPosDocument >  menuWrapHeight + posMenu - menuHeight - 45) {
+                menu.css({'top':'auto', 'bottom': 45 + 'px'});
+            }
+
+            else {
+                menu.css({'top': curPosDocument - posMenu, 'bottom':'auto'});
+            }
         }
     });
 

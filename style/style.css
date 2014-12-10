@@ -394,10 +394,10 @@ a:hover                        { text-decoration:none; }
 		position: relative;
 	}
 		.scroll-menu {
+            display: block;
 			position: absolute;
 			top: 40px;
 			left: 0;
-			box-sizing: border-box;
 			width: 230px;
 			padding: 20px 0;
 			background: #FBC633;
@@ -521,6 +521,8 @@ a:hover                        { text-decoration:none; }
                             background: #7D3A1D;
                         }
 		.box-list-food {
+            display: block;
+            overflow: hidden;
 			float: right;
 			width: 710px;
 			margin-top: 35px;
