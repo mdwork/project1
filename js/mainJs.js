@@ -16,10 +16,10 @@ $(function() {
             posMenu = menuWrap.offset().top, //позиция блока враппера в документе
             curPosDocument = $(document).scrollTop(); //текущая позиция экрана
 
-        if(curPosDocument < posMenu) {
+        if(curPosDocument < posMenu + 40) {
             menu.css({'top': 40 + 'px', 'bottom':'auto'});
         }
-        else if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu - $(window).height()) {
+        else if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu + 35 - $(window).height()) {
             menu.css({'top': curPosDocument - posMenu, 'bottom':'auto'});
         }
         else {
