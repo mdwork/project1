@@ -1,4 +1,5 @@
 $(function() {
+    /*drop-down list*/
     $('.address-js').on('click', function(e){
         var address = $(e.target).siblings('.list-city-dw');
         address.css({'display':'block', 'opacity':'0'}).animate({'opacity':'1'}, 500);
@@ -8,6 +9,7 @@ $(function() {
         })
     });
 
+    /*menu position*/
     $(document).scroll(function(){
         var menuWrap = $('.wrap-menu-js'), //блок перемещения меню
             menuWrapHeight = menuWrap.height(), //высота блока перемещения меню
@@ -31,6 +33,10 @@ $(function() {
         }
     });
 
+    /*selected source*/
+    $('.list-add-offers li').on('click', function(){
+        $(this).toggleClass('select');
+    });
 
     /*popup function*/
     function popupWindow(targetClick, showCurrentForm) {
