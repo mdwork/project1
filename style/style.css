@@ -988,6 +988,7 @@ a:hover                        { text-decoration:none; }
         }
 
 .additional-offers {
+    display: none;
     overflow: hidden;
     position: relative;
     width: 710px;
