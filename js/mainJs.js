@@ -9,26 +9,21 @@ $(function() {
     });
 
     $(document).scroll(function(){
-        var menuWrap = $('.wrap-menu-js'),
-            menuWrapHeight = menuWrap.height(),
-            menu = $('.wrap-menu-js .scroll-menu'),
-            menuHeight = menu.height(),
-            posMenu = menuWrap.offset().top,
-            curPosDocument = $(document).scrollTop();
+        var menuWrap = $('.wrap-menu-js'), //блок перемещения меню
+            menuWrapHeight = menuWrap.height(), //высота блока перемещения меню
+            menu = $('.wrap-menu-js .scroll-menu'), ////фиксированное меню
+            menuHeight = menu.height(), //высота фиксированного меню
+            posMenu = menuWrap.offset().top, //позиция блока враппера в документе
+            curPosDocument = $(document).scrollTop(); //текущая позиция экрана
 
         if(curPosDocument < posMenu) {
-            menu.css('top', 40 + 'px');
+            menu.css({'top': 40 + 'px', 'bottom':'auto'});
         }
         else if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu - $(window).height()) {
-            if(curPosDocument - posMenu > 40) {
-                menu.css('top', curPosDocument - posMenu);
-            }
-            else {
-                menu.css('top', 40 + 'px');
-            }
+            menu.css({'top': curPosDocument - posMenu, 'bottom':'auto'});
         }
-        else if(curPosDocument > menuWrapHeight + posMenu - $(window).height()) {
-            menu.css('top', menuWrapHeight + posMenu - menuHeight - $(window).height() - 35);
+        else {
+            menu.css({'top':'auto', 'bottom': 45 + 'px'});
         }
     });
 
