@@ -9,6 +9,8 @@ $(function() {
         })
     });
 
+    $('.list-food li:nth-child(3n + 0)').css('margin-right', 0);
+
     /*menu position*/
     $(document).scroll(function(){
         var menuWrap = $('.wrap-menu-js'), //блок перемещения меню
