@@ -21,7 +21,7 @@ $(function() {
             menu.css({'top': 40 + 'px', 'bottom':'auto'});
         }
         else if(curPosDocument > posMenu) {
-            if (curPosDocument >  menuWrapHeight + posMenu - menuHeight - 45) {
+            if (curPosDocument >  menuWrapHeight + posMenu - menuHeight - 85) {
                 menu.css({'top':'auto', 'bottom': 45 + 'px'});
             }
 
