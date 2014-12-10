@@ -189,7 +189,8 @@ a:hover                        { text-decoration:none; }
 				display: block;
 				width: 14px;
 				height: 7px;
-				background: url("../images/header/triagle_white_top.png") no-repeat;
+				background: url("../images/spritebox.png") no-repeat;
+                background-position: -92px -20px;
 			}
 			.list-city-dw {
 				display: none;
@@ -250,7 +251,7 @@ a:hover                        { text-decoration:none; }
 		height: 13px;
 		background-position: center;
         background-repeat: no-repeat;
-        background-image: url("../images/content/icon_header_blue.png");
+        background-image: url("../images/content/icon_header_white.png");
 	}
 	.line-blue {
 		background-image: url("../images/content/icon_header_blue.png");
@@ -338,7 +339,8 @@ a:hover                        { text-decoration:none; }
 			top: 55px;
 			width: 94px;
 			height: 10px;
-			background: url("../images/content/cicrles.png") no-repeat;
+			background: url("../images/spritebox.png") no-repeat;
+            background-position: 0 -80px;
 		}
 		.list-steps-work:before {
 			left: 300px;
@@ -435,7 +437,8 @@ a:hover                        { text-decoration:none; }
                     }
                         .block-menu li {
                             margin-bottom: 5px;
-                            background: url("../images/content/icon_menu_romb.png") no-repeat 10px 8px;
+                            background: url("../images/spritebox.png") no-repeat;
+                            background-position: -9px -105px;
                         }
                         .block-menu li:hover {
                             background-color: #FCD770;
@@ -496,11 +499,12 @@ a:hover                        { text-decoration:none; }
                                 width: 13px;
                                 height: 13px;
                                 margin-left: 5px;
-                                background: url("../images/content/delete.png") top no-repeat;
+                                background: url("../images/spritebox.png") no-repeat;
+                                background-position: 0 -46px;
                                 cursor: pointer;
                             }
                             .number:hover:after {
-                                background-position: bottom;
+                                background-position: 0 -67px;
                             }
                     .wrap-sum {
                         display: block;
@@ -583,6 +587,8 @@ a:hover                        { text-decoration:none; }
                     }
 						.min-logo {
 							display: block;
+                            width: 140px;
+                            height: 35px;
 							margin: 0 0 15px 20px;
 						}
 						.foto-food {
@@ -640,15 +646,15 @@ a:hover                        { text-decoration:none; }
             height: 46px;
             cursor: pointer;
             text-indent: -9999px;
+            background: url("../images/spritebox.png") no-repeat;
         }
         .action-slider .prev2 {
             left: 0;
-            background: url("../images/content/slider_action/triagle_prev.png") no-repeat;
+            background-position: 0 0;
         }
         .action-slider .next2 {
             right: 0;
-            background: url("../images/content/slider_action/triagle_next.png") no-repeat;
-
+            background-position: -46px 0;
         }
         .action-slider .btn:hover {
             opacity: 0.6;
@@ -710,25 +716,26 @@ a:hover                        { text-decoration:none; }
 		top: 65px;
 		width: 18px;
 		height: 32px;
+        background: url("../images/spritebox.png") no-repeat;
 	}
 	#jcl-demo .next,
 	#jcl-demo1 .next1 {
 		right: 0;
-		background: url("../images/content/slider2/next.png") no-repeat;
+        background-position: -13px -46px;
 	}
 		#jcl-demo .next:hover,
         #jcl-demo1 .next1:hover {
-			background-image: url("../images/content/slider2/next_hover.png");
+            background-position: -31px -46px;
 		}
 	#jcl-demo .prev,
 	#jcl-demo1 .prev1 {
 		left: 0;
-		background: url("../images/content/slider2/prev.png") no-repeat;
+        background-position: -49px -46px;
 	}
 		#jcl-demo .prev:hover,
 		#jcl-demo1 .prev1:hover {
 			left: 0;
-			background: url("../images/content/slider2/prev_hover.png") no-repeat;
+            background-position: -67px -46px;
 		}
 
 .box-reviews,
@@ -836,11 +843,12 @@ a:hover                        { text-decoration:none; }
         top: 10px;
         width: 10px;
         height: 10px;
-        background: url("../images/content/bg_close.png") no-repeat center;
+        background: url("../images/spritebox.png") no-repeat;
+        background-position: -102px -10px;
         cursor: pointer;
     }
     .close:hover {
-        background-image: url("../images/content/bg_close_hover.png");
+        background-position: -112px -0px;
     }
     .popup-title {
         margin-bottom: 15px;
@@ -942,10 +950,10 @@ a:hover                        { text-decoration:none; }
     border-radius: 6px;
 }
     .box-callback .close {
-        background-image: url("../images/content/callback_close.png");
+        background-position: -102px 0;
     }
     .box-callback .close:hover {
-        background-image: url("../images/content/callback_close_hover.png");
+        background-position: -112px -10px;
     }
     .box-callback p {
         margin-bottom: 16px;
@@ -993,10 +1001,10 @@ a:hover                        { text-decoration:none; }
     border-radius: 6px;
 }
     .additional-offers .close {
-        background-image: url("../images/content/popup_close.png");
+        background-position: -92px -0px;
     }
     .additional-offers .close:hover {
-        background-image: url("../images/content/popup_close_hover.png");
+        background-position: -92px -10px;
     }
     .additional-offers .popup-title {
         font-weight: 700;
@@ -1149,7 +1157,7 @@ a:hover                        { text-decoration:none; }
             border-color: #7d3a1d;
         }
             .wrap-header-location .address-box .text:before {
-                background-image: url("../images/content/triagle_brown.png");
+                background-position: -106px -20px;
             }
         .wrap-header-location .list-city-dw {
             left: 0;
