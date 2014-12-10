@@ -16,9 +16,16 @@ $(function() {
             posMenu = menuWrap.offset().top,
             curPosDocument = $(document).scrollTop();
 
-        if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu - $(window).height()) {
-            menu.css('top', curPosDocument - posMenu);
-            console.log('111')
+        if(curPosDocument < posMenu) {
+            menu.css('top', 40 + 'px');
+        }
+        else if(curPosDocument > posMenu && curPosDocument < menuWrapHeight + posMenu - $(window).height()) {
+            if(curPosDocument - posMenu > 40) {
+                menu.css('top', curPosDocument - posMenu);
+            }
+            else {
+                menu.css('top', 40 + 'px');
+            }
         }
         else if(curPosDocument > menuWrapHeight + posMenu - $(window).height()) {
             menu.css('top', menuWrapHeight + posMenu - menuHeight - $(window).height() - 35);
