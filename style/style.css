@@ -352,12 +352,6 @@ a:hover                        { text-decoration:none; }
 			display: inline-table;
 			width: 267px;
 		}
-			.list-steps-work img {
-				display: block;
-				width: 120px;
-				height: 120px;
-				margin: 0 auto 15px;
-			}
 			.list-steps-work span {
 				position: relative;
 				display: block;
@@ -591,10 +585,6 @@ a:hover                        { text-decoration:none; }
                         width: 140px;
                         height: 35px;
                         margin: 0 0 15px 20px;
-                    }
-                    .foto-food {
-                        display: block;
-                        margin-bottom: 7px;
                     }
                     .list-food li h3 {
                         padding-bottom: 10px;
@@ -1160,18 +1150,38 @@ a:hover                        { text-decoration:none; }
                 -moz-border-radius: 80px;
                 border-radius: 80px;
             }
+            .list-steps-work .wrap-img {
+                height: 120px;
+                width: 120px;
+                margin-bottom: 16px;
+
+                -webkit-border-radius: 60px;
+                -moz-border-radius: 60px;
+                border-radius: 60px;
+            }
                 .img-box {
                     overflow: hidden;
                     display: inline-block;
                     height: 148px;
                     width: 148px;
-                    line-height: 148px;
-                    vertical-align: middle;
+                    margin: 6px;
+                    line-height: 145px;
                     background: #FFFFFF;
+                    text-align: center;
 
                     -webkit-border-radius: 74px;
                     -moz-border-radius: 74px;
                     border-radius: 74px;
+                }
+                .list-steps-work .img-box {
+                    height: 110px;
+                    width: 110px;
+                    margin: 5px;
+                    line-height: 107px;
+
+                    -webkit-border-radius: 55px;
+                    -moz-border-radius: 55px;
+                    border-radius: 55px;
                 }
                     .img-box img {
                         vertical-align: middle;
@@ -1331,9 +1341,6 @@ a:hover                        { text-decoration:none; }
     }
         .map-box-callback .popup-title {
             line-height: 26px;
-        }
-        .map-box-callback .list-form {
-            margin-bottom: 30px;
         }
             .map-box-callback .list-form input,
             .map-box-callback .list-form select {
