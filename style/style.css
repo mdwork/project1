@@ -95,7 +95,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-header {
-	padding: 38px 0;
+	padding: 36px 0;
 	background: url("../images/header/bg_header.jpg") no-repeat center;
 }
 	.header {
@@ -105,7 +105,7 @@ a:hover                        { text-decoration:none; }
 	}
 	.main-logo {
 		float: left;
-		margin: 20px 0 30px;
+		margin: 25px 0 30px;
 	}
 		.main-logo a,
 		.main-logo img {
@@ -119,12 +119,13 @@ a:hover                        { text-decoration:none; }
 	}
         .contact-box span,
         .info-box-header span {
-            margin-bottom: 8px;
+            margin-bottom: 9px;
         }
 		.header span {
 			display: block;
 		}
 		.contact-box .tell {
+            margin-right: 12px;
 			font-size: 24px;
 			color: #ffe373;
 		}
@@ -158,13 +159,13 @@ a:hover                        { text-decoration:none; }
 		}
 		.contact-box .btn-popup {
 			width: 220px;
-			margin-top: 12px;
+			margin-top: 13px;
 			font-size: 20px;
 			color: #7d3a1d;
 		}
 	.info-box-header {
 		width: 300px;
-		margin: 0 auto 30px;
+		margin: 0 auto 29px;
 	}
 		.header .tell {
 			font-size: 24px;
@@ -316,19 +317,19 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .box-steps-work {
-	padding: 27px 0;
-	margin-bottom: 40px;
+	padding: 30px 0;
+	margin-bottom: 10px;
 }
 	.big-header h2 {
 		margin-bottom: 30px;
 		color: #c61617;
 		font: 600 44px 'Comfortaa', sans-serif;
 		text-align: center;
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 	}
 	.list-steps-work {
 		position: relative;
-		margin-bottom: 37px;
+		margin-bottom: 36px;
 		text-align: center;
 	}
 		.list-steps-work:before,
@@ -399,15 +400,15 @@ a:hover                        { text-decoration:none; }
 			background: #FBC633;
             color: #7d3a1d;
 
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 10px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
 		}
             .scroll-menu section {
                 padding: 0 15px;
             }
             .scroll-menu .top {
-                padding-bottom: 14px;
+                padding-bottom: 18px;
                 margin-bottom: 14px;
                 background: url("../images/content/separator.png") repeat-x bottom;
             }
@@ -417,7 +418,7 @@ a:hover                        { text-decoration:none; }
                     .scroll-menu .logo-section-menu {
                         width: 80px;
                         height: 80px;
-                        margin-bottom: 5px;
+                        margin-bottom: 8px;
                     }
                     .scroll-menu h2 {
                         padding-bottom: 10px;
@@ -427,10 +428,10 @@ a:hover                        { text-decoration:none; }
                         text-transform: uppercase;
                     }
                     .block-menu {
-                        margin-top: 9px;
+                        margin-top: 6px;
                     }
                         .block-menu li {
-                            margin-bottom: 5px;
+                            margin-bottom: 2px;
                             background: url("../images/spritebox.png") no-repeat;
                             background-position: -9px -105px;
                         }
@@ -458,7 +459,7 @@ a:hover                        { text-decoration:none; }
                     }
                     .header-basket {
                         margin-top: 8px;
-                        padding-bottom: 10px;
+                        padding-bottom: 11px;
                         border-bottom: 1px solid #7d3a1d;
                     }
                     .list-food-basket {
@@ -466,7 +467,7 @@ a:hover                        { text-decoration:none; }
                         border-bottom: 1px solid #7d3a1d;
                     }
                     .list-food-basket li {
-                        padding: 8px 0 5px;
+                        padding: 6px 0 4px;
                         border-top: 1px dashed #7d3a1d;
                     }
                     .list-food-basket li:first-child {
@@ -525,13 +526,13 @@ a:hover                        { text-decoration:none; }
             display: block;
             overflow: hidden;
 			float: right;
-			width: 710px;
+			width: 711px;
 			margin-top: 35px;
 		}
 			.sub-header-section {
 				position: relative;
-				padding-bottom: 20px;
-				margin-bottom: 30px;
+				padding-bottom: 19px;
+				margin-bottom: 14px;
 				background: url("../images/content/icon_header_romb.png") no-repeat center bottom;
 			}
 				.sub-header-section:before,
@@ -558,16 +559,14 @@ a:hover                        { text-decoration:none; }
 
             .list-food {
                 overflow: hidden;
-                width: 686px;
-                margin-left: 24px;
             }
                 .list-food li {
                     position: relative;
                     display: inline-table;
-                    width: 165px;
-                    min-height: 490px;
-                    margin: 0 40px 45px 0;
-                    padding: 15px 15px 15px;
+                    width: 201px;
+                    min-height: 460px;
+                    margin: 0 6px 34px 0;
+                    padding: 15px 14px 15px;
                     text-align: center;
                     color: #10435a;
                     background: #fff;
@@ -590,18 +589,19 @@ a:hover                        { text-decoration:none; }
                         margin: 0 0 15px 20px;
                     }
                     .list-food li h3 {
-                        padding-bottom: 10px;
+                        padding-bottom: 11px;
                         margin-bottom: 8px;
                         font: 18px 'Comfortaa', sans-serif;
                         border-bottom: 1px solid #10435a;
                     }
                     .list-food li .bottom {
                         position: absolute;
-                        bottom: 35px;
+                        bottom: 36px;
+                        left: 34px;
                     }
                         .list-food .description {
                             display: block;
-                            margin-bottom: 104px;
+                            margin-bottom: 110px;
                             padding-bottom: 5px;
                             font-size: 14px;
                             border-bottom: 1px solid #10435a;
@@ -610,9 +610,10 @@ a:hover                        { text-decoration:none; }
                             display: block;
                             margin-bottom: 15px;
                             font-size: 18px;
+                            letter-spacing: 2px;
                         }
 	.box-menu .line-block {
-		margin-top: 20px;
+        margin-top: -6px;
 	}
 
 .box-action-slider {
@@ -634,7 +635,7 @@ a:hover                        { text-decoration:none; }
         .action-slider .next2,
         .action-slider .prev2 {
             position: absolute;
-            top: 48%;
+            top: 43%;
             display: block;
             width: 46px;
             height: 46px;
@@ -655,10 +656,11 @@ a:hover                        { text-decoration:none; }
         }
             .action-slider strong {
                 display: block;
+                letter-spacing: 1px;
             }
             .action-slider .foto {
                 display: block;
-                margin: 17px auto;
+                margin: 17px auto 19px;
                 width: 200px;
                 height: 200px;
             }
@@ -667,7 +669,7 @@ a:hover                        { text-decoration:none; }
     margin-bottom: 40px;
 }
     .box-about-us .header-section {
-        margin-bottom: 35px;
+        margin-bottom: 33px;
     }
 	.box-about-us p {
 		font-size: 18px;
@@ -677,8 +679,12 @@ a:hover                        { text-decoration:none; }
 	#jcl-demo,
 	#jcl-demo1 {
 		position: relative;
-        margin: 35px 0;
+        margin: 34px 0 36px;
 	}
+    .box-reviews #jcl-demo,
+    .box-reviews #jcl-demo1 {
+        margin: 40px 0 5px;
+    }
 	.carousel li,
 	.carousel1 li {
 		width: 290px;
@@ -692,7 +698,7 @@ a:hover                        { text-decoration:none; }
         min-height: 300px;
     }
     .carousel2 li {
-        width: 500px;
+        width: 860px;
     }
 		.carousel li .wrap-foto {
 			display: inline-block;
@@ -707,11 +713,17 @@ a:hover                        { text-decoration:none; }
 	#jcl-demo1 .next1,
 	#jcl-demo1 .prev1 {
 		position: absolute;
-		top: 65px;
+        top: 69px;
 		width: 18px;
 		height: 32px;
         background: url("../images/spritebox.png") no-repeat;
 	}
+    .box-reviews #jcl-demo .next,
+    .box-reviews #jcl-demo .prev,
+    .box-reviews #jcl-demo1 .next1,
+    .box-reviews #jcl-demo1 .prev1  {
+        top: 44px;
+    }
 	#jcl-demo .next,
 	#jcl-demo1 .next1 {
 		right: 0;
@@ -723,7 +735,7 @@ a:hover                        { text-decoration:none; }
 		}
 	#jcl-demo .prev,
 	#jcl-demo1 .prev1 {
-		left: 0;
+		left: 1px;
         background-position: -49px -46px;
 	}
 		#jcl-demo .prev:hover,
@@ -753,7 +765,7 @@ a:hover                        { text-decoration:none; }
     }
     .box-reviews .site {
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         font-size: 12px;
     }
     .box-reviews p {
@@ -763,7 +775,7 @@ a:hover                        { text-decoration:none; }
         font-size: 14px;
     }
 .box-callback-control {
-	padding: 35px 0 40px;
+	padding: 34px 0 39px;
 	background: rgb(213,44,63);
 	background: rgba(213,44,63, 0.9);
 }
@@ -788,6 +800,9 @@ a:hover                        { text-decoration:none; }
 		.wrap-form-control form {
 			margin-top: 30px;
 		}
+            .wrap-form-control .list-form {
+                margin-bottom: 2px;
+            }
 			.wrap-form-control li {
 				float: left;
 				margin-left: 20px;
@@ -1226,6 +1241,7 @@ a:hover                        { text-decoration:none; }
     visibility: hidden;
     left: -5000px;
     margin: 0 auto;
+    width: 860px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
@@ -1248,9 +1264,10 @@ a:hover                        { text-decoration:none; }
 		}
 		.footer .action {
 			font: 24px 'Comfortaa';
+            letter-spacing: 0.65px;
 		}
 		.contact-data {
-			margin-top: 20px;
+			margin-top: 19px;
 		}
 			.contact-data li {
 				font-family: 'Roboto Condensed', sans-serif;
@@ -1265,16 +1282,20 @@ a:hover                        { text-decoration:none; }
 }
     .header-location h2 {
         font: 31px "Comfortaa", sans-serif;
+        margin-bottom: 5px;
     }
     .wrap-header-location .address-box {
         width: 216px;
         margin: 0 auto;
     }
         .wrap-header-location .address-box .text {
+            padding-bottom: 2px;
             color: #7d3a1d;
             border-color: #7d3a1d;
+            font-size: 21px;
         }
             .wrap-header-location .address-box .text:before {
+                top: 13px;
                 background-position: -106px -20px;
             }
         .wrap-header-location .list-city-dw {
@@ -1300,7 +1321,7 @@ a:hover                        { text-decoration:none; }
         top: 28px;
         left: 50%;
         padding: 5px;
-        margin-left: -86px;
+        margin-left: -90px;
         background: #fffffe;
 
         -webkit-box-shadow: 0 0 2px 2px rgba(243, 243, 243, 1);
@@ -1315,7 +1336,7 @@ a:hover                        { text-decoration:none; }
             overflow: hidden;
             height: 128px;
             width: 128px;
-            padding: 21px;
+            padding: 22px;
             background: url("../images/content/bg_border.png") no-repeat center;
             background-size: cover;
             text-align: center;
@@ -1338,13 +1359,14 @@ a:hover                        { text-decoration:none; }
         z-index: 5;
         overflow: hidden;
         width: 200px;
-        padding: 24px 20px 12px;
+        padding: 24px 20px 14px;
         margin: 0 auto;
         background: #36525D;
         color: #ffffff;
         text-align: center;
     }
         .map-box-callback .popup-title {
+            margin-bottom: 13px;
             line-height: 26px;
         }
             .map-box-callback .list-form input,
