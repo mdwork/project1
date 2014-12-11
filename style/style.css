@@ -1184,7 +1184,13 @@ a:hover                        { text-decoration:none; }
                     border-radius: 55px;
                 }
                     .img-box img {
+                        max-height: 148px;
+                        max-width: 148px;
                         vertical-align: middle;
+                    }
+                    .list-steps-work .img-box img {
+                        max-height: 110px;
+                        max-width: 110px;
                     }
             .list-add-offers h3 {
                 margin-bottom: 14px;
