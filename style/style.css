@@ -1044,10 +1044,10 @@ a:hover                        { text-decoration:none; }
     border-radius: 6px;
 }
     .box-callback .close {
-        background-position: -102px 0;
+        background-position: -112px -10px;
     }
     .box-callback .close:hover {
-        background-position: -112px -10px;
+        background-position: -102px 0;
     }
     .box-callback p {
         margin-bottom: 16px;
@@ -1083,6 +1083,7 @@ a:hover                        { text-decoration:none; }
         .callback .btn-popup {
             width: 160px;
             height: 44px;
+            color: #10435a;
         }
 
 .additional-offers {
