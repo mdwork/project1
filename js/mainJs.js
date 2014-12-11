@@ -1,11 +1,13 @@
 $(function() {
     /*drop-down list*/
-    $('.address-js').on('click', function(e){
+    $('.address-js').on('click', function(){
         var address = $(e.target).siblings('.list-city-dw');
         address.css({'display':'block', 'opacity':'0'}).animate({'opacity':'1'}, 500);
 
         address.on('mouseleave', function(){
-            address.animate({'opacity':'0'}, 200);
+            address.animate({'opacity':'0'}, 200, function(){
+                address.css('display','none');
+            });
         })
     });
 
