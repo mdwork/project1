@@ -476,6 +476,9 @@ a:hover                        { text-decoration:none; }
                         .name-food {
                             float: left;
                         }
+                        .name-food {
+                            width: 155px;
+                        }
                         .amount-column,
                         .number {
                             float: right;
@@ -973,10 +976,10 @@ a:hover                        { text-decoration:none; }
 					position: absolute;
 					right: 0;
 					top: 0;
-					width: 24px;
+					width: 34px;
 					height: 32px;
 					pointer-events: none;
-					background: #fff url("../images/content/triagle_select.png") 0 14px no-repeat;
+					background: #fff url("../images/content/triagle_select.png") 10px 14px no-repeat;
 
 					-webkit-border-top-right-radius: 2px;
 					-webkit-border-bottom-right-radius: 2px;
@@ -1059,6 +1062,10 @@ a:hover                        { text-decoration:none; }
         }
             .list-form input,
             .list-form select {
+                color: #10435a !important;
+                border: none;
+            }
+            .list-form input:focus {
                 color: #10435a;
             }
                 .list-form input::-webkit-input-placeholder {
@@ -1151,8 +1158,9 @@ a:hover                        { text-decoration:none; }
                 border-radius: 80px;
             }
             .list-steps-work .wrap-img {
-                height: 120px;
-                width: 120px;
+                height: 110px;
+                width: 110px;
+                padding: 5px;
                 margin-bottom: 16px;
 
                 -webkit-border-radius: 60px;
@@ -1172,16 +1180,6 @@ a:hover                        { text-decoration:none; }
                     -webkit-border-radius: 74px;
                     -moz-border-radius: 74px;
                     border-radius: 74px;
-                }
-                .list-steps-work .img-box {
-                    height: 110px;
-                    width: 110px;
-                    margin: 5px;
-                    line-height: 107px;
-
-                    -webkit-border-radius: 55px;
-                    -moz-border-radius: 55px;
-                    border-radius: 55px;
                 }
                     .img-box img {
                         max-height: 148px;
